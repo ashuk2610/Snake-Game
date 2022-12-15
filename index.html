@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game : Revive your Memories</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!-- Style Sheet  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Cdn Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="body">
+        <div id="scoreBox">Score: 0</div>
+        <div id="hiscoreBox">HiScore: 0</div>
+        <div id="board"></div>
+
+        <!-- Controlls for Mobile Devices  -->
+
+        <div class="mobile-btns">
+
+            <div class="left-btns">
+                <i class="fa-solid fa-caret-up" onclick="up() "></i>
+                <i class="fa-solid fa-caret-down " onclick="down() "></i>
+            </div>
+
+            <div class="right-btns">
+                <i class="fa-solid fa-caret-left" onclick="left() "></i>
+                <i class="fa-solid fa-caret-right" onclick="right() "></i>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

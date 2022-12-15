@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.body{
+    background: url("../assets/images/bg.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 160px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color:red;
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.08);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(yellow, green);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+/* Styling Of Controllers for Mobile Devices Starts Here  */
+
+.mobile-btns{
+    display: none;
+    
+}
+
+/* Media Queries Starts Here  */
+
+
+@media (max-width:1024px) {
+
+    .body{
+        background: #85A502;
+    }
+
+#board{
+    margin-top: 50px;
+}
+
+
+#scoreBox{
+    top: 10px;
+    right: 80px;
+    font-size: 25px;
+}
+
+#hiscoreBox{
+    top: 40px;
+    right: 55px;
+    font-size: 25px;
+   
+}
+/* Styling Of Controllers for Mobile Devices Starts Here  */
+
+i{
+    font-size: 20rem;
+    display: block;
+    box-sizing: border-box;
+}
+
+.mobile-btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+.left-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+}
+
+.right-btns{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.fa-caret-down{
+    margin-top: -50px;
+}
+
+
+}
+
+@media (max-width:556px) {
+    i{
+        font-size: 8rem;
+       
+    }
+    .mobile-btns{
+        gap: 3rem;
+        
+    }
+}
